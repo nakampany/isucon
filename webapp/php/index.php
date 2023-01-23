@@ -144,7 +144,9 @@ $container->set('helper', function ($c) {
             $posts = [];
             foreach ($results as $post) {
                 $post['comment_count'] = $this->fetch_first('SELECT COUNT(*) AS `count` FROM `comments` WHERE `post_id` = ?', $post['id'])['count'];
-                $query = 'SELECT * FROM `comments` WHERE `post_id` = ? ORDER BY `created_at` DESC';
+                // $query = 'SELECT * FROM `comments` WHERE `post_id` = ? ORDER BY `created_at` DESC';
+                $query = 'SELECT * FROM `comments` JOIN `users` ON `comments.user_id` = `users.id` WHERE `comments.post_id` = ? ORDER BY `comments.created_at` DESC';
+
                 if (!$all_comments) {
                     $query .= ' LIMIT 3';
                 }
