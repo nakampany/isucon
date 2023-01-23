@@ -12,7 +12,7 @@
 <img width="372" alt="スクリーン ショット 2023-01-23 に 05 07 59 午前" src="https://user-images.githubusercontent.com/103278404/214067485-f4232779-f35f-43b5-b2d6-ab0bb5218867.png">
 
 ## 変更したコード
-- 
+- https://github.com/nakampany/isucon_kadai/pull/2
 ## 計測方法
 ### **top**
 - プロセスごとのcpu使用率、メモリ使用率をリアルタイムで確認できる
