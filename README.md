@@ -36,7 +36,10 @@
 
 ```
 chmod 400 <設定した鍵ファイル>
+chmod 400 ~/.ssh/isucon6.pem
+
 ssh -i <設定した鍵ファイル> ubuntu@IPアドレス（Elastic IP）
+ssh -i ~/.ssh/isucon6.pem ubuntu@46.51.239.101
 ```
 ## PHP
 
